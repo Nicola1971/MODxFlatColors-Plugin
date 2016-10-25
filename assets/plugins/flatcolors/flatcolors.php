@@ -47,7 +47,7 @@ a:link {
     color: '.$LinkColor.'!important;
 }
 
-h1:before, .tab-pane ul li ul li:before, .dynamic-tab-pane-control .tab-row, .tab.selected span, form h1:before, .dashboard h1:before, .dashboard-block-content ul li a, .dashrow
+h1:before, .tab-pane ul li ul li:before, form h1:before, .dashboard h1:before, .dashboard-block-content ul li a, .dashrow
 ul li span a, span.pagetitle-icon
 {color: '.$PrimaryColor.'!important;}
 
@@ -68,18 +68,29 @@ border-bottom:0;
 border:'.$PrimaryColor.' ;
 border-bottom:0;
 }
-.dynamic-tab-pane-control .tab-row .tab.selected, .dynamic-tab-pane-control .tab-row .tab.selected span{
-border-top-color:'.$PrimaryColor.';
+.dynamic-tab-pane-control .tab-row .tab.selected,
+.dynamic-tab-pane-control .tab-row .tab.selected.hover{
+background: '.$PrimaryColor.';
+}
+.dynamic-tab-pane-control .tab-row .tab.selected span:after {
+border-top-color: '.$PrimaryColor.';
 }
 .dynamic-tab-pane-control .tab-row .tab.selected.hover {
 color:'.$PrimaryColor.';
 border-top-color:'.$PrimaryColor.';
 }
-.dynamic-tab-pane-control .tab-row .tab, .dynamic-tab-pane-control .tab-row .tab.hover span, 
-.tab-row h2.tab span i,
+.dynamic-tab-pane-control .tab-row .tab, 
+.dynamic-tab-pane-control .tab-row .tab span i,
 .tab-pane ul li ul li strong
 {
-color:'.$PrimaryColor.'!important;
+color:'.$PrimaryColor.';
+}
+.dynamic-tab-pane-control .tab-row .tab.selected span i,
+.dynamic-tab-pane-control .tab-row .tab.selected.hover span i 
+ {
+  color: #FFF;
+  background: transparent;
+
 }
 .actionButtons a {
 color:#FFF!important;
@@ -129,6 +140,7 @@ color: #FFF!important;
 .treeframebody .tab-page ul.actionButtons li i {
 color:#FFF!important;
 }
+.disabledPlugin a {color: #fff;!important:}
 	</style>
 ';
 }

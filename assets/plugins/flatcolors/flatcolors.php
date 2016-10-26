@@ -48,7 +48,7 @@ body {
 a:link, a:visited {
     color: '.$ALinksColor.'!important;
 }
-a.btn.btn-action, #modxrecent_widget .btn, div#categories_list ul li strong a {
+a.btn.btn-action, a.btn.panel-hide, #modxrecent_widget .btn, div#categories_list ul li strong a {
     color: #FFF!important;
 }
 span.disabledPlugin a {

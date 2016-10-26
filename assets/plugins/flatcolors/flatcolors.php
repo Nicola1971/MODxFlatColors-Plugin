@@ -68,7 +68,7 @@ background:'.$PrimaryColor.'!important;}
 .dashboard .sectionHeader, .sectionHeader, .tab-pane ul li strong 
 {
 background:'.$PrimaryColor.'!important;
-border:'.$PrimaryColor.' ;
+border:'.$PrimaryColor.'!important;
 border-bottom:0;
 }
 .dashboard .sectionHeader, .sectionHeader, .tab-pane ul li strong 
@@ -76,11 +76,11 @@ border-bottom:0;
 border:'.$PrimaryColor.' ;
 border-bottom:0;
 }
-.dynamic-tab-pane-control .tab-row .tab.selected,
-.dynamic-tab-pane-control .tab-row .tab.selected.hover{
+.dynamic-tab-pane-control.tab-pane .tab-row .tab.selected,
+.dynamic-tab-pane-control.tab-pane .tab-row .tab.selected.hover{
 background: '.$PrimaryColor.';
 }
-.dynamic-tab-pane-control .tab-row .tab.selected span:after {
+.dynamic-tab-pane-control.tab-pane .tab-row .tab.selected span:after {
 border-top-color: '.$PrimaryColor.';
 }
 .dynamic-tab-pane-control .tab-row .tab.selected.hover {

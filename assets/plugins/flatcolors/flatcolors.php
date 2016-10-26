@@ -59,7 +59,7 @@ h1:before, .tab-pane ul li ul li:before, form h1:before, .dashboard h1:before, .
 ul li span a, span.pagetitle-icon
 {color: '.$PrimaryColor.'!important;}
 
-input[type="button"], input[type="submit"], .tab-pane ul li strong, #mx_contextmenu #nameHolder, .panel-hide, .dashboard .sectionHeader, .sectionHeader, .tab-pane ul li strong {
+input[type="button"], input[type="submit"], .tab-pane ul li strong, #mx_contextmenu #nameHolder, .panel-hide, .tab-pane ul li strong {
 background:'.$PrimaryColor.'!important;}
 
 .tab-pane ul li ul li strong {
@@ -130,7 +130,7 @@ body {
 }
 div.treeframebody, #treeHolder {	background: '.$TreeBgColor.'!important;}
 
-.treeButton i, .treeButtonDisabled i {  color: '.$PrimaryColor.'!important;
+.treeButton i, .treeButtonDisabled i , #mx_contextmenu .menuLink i{  color: '.$PrimaryColor.'!important;
 }
 div#treeHolder a i:hover, .treeButton i:hover, .treeButtonDisabled i:hover {
 	color: '.$PrimaryColor.'!important;
@@ -143,7 +143,7 @@ border-color: '.$PrimaryColor.'!important;
 .treeframebody .tab-row h2.tab span, .treeframebody .tab-row h2.tab span i, .treeframebody .tab-pane input.form-control{
     color: '.$PrimaryColor.'!important; }
 
-#mx_contextmenu #nameHolder, #mx_contextmenu a i  {
+#mx_contextmenu #nameHolder, #mx_contextmenu a i, #mx_contextmenu .menuLink:hover {
 background:'.$PrimaryColor.';
 color:#FFF!important;
 }
@@ -160,7 +160,8 @@ color: #FFF!important;
 background: '.$TreeElBgColor.'!important;
 background-color: '.$TreeElBgColor.'!important;
 }
-.treeframebody .tab-page ul.actionButtons li i {
+.treeframebody .tab-page ul.actionButtons li i,
+#mx_contextmenu .menuLink:hover i{
 color:#FFF!important;
 }
 .rootNode, .publishedNode, 

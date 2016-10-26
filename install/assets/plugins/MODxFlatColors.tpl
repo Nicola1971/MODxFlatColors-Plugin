@@ -11,7 +11,7 @@
  * @internal    @events OnManagerTopPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTreePrerender,OnManagerTreeInit
  * @internal    @installset base
  * @internal    @modx_category Admin
- * @internal    @properties  &PrimaryColor=MODxFlat Manager Color:;string;#FF6600;;Flat Skin Primary Color &LinkColor=Links Color:;string; &NavFrameBgColor=Top Frame Background color:;string; &TreeBgColor=Tree Frame Background:;string; &MainBgColor=Main Frame Background:;string;
+ * @internal    @properties  &PrimaryColor=MODxFlat Manager Color:;string;#FF6600;;Flat Skin Primary Color (mandatory) &NavFrameBgColor= Top Frame Background color:;string;;;(optional) &TreeBgColor= Tree Frame Background:;string;;;(optional) &TLinkColor=Tree Links Color:;string;;;Published resources and ElementsInTree element names (optional) &TreeElBgColor= Tree Elements tab Background:;string;;;ElementsInTree plugin background (optional) &MainBgColor= Main Frame Background:;string;;;(optional) &MainLinkColor=Main Links Color:;string;;;(optional)
  */
 
 /*
@@ -22,7 +22,7 @@ Version Beta 1.0
 Events: OnManagerTopPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTreePrerender,OnManagerTreeInit
 
 Default configuration:
-&PrimaryColor=MODxFlat Manager Color:;string;#FF6600;;Flat Skin Primary Color &LinkColor=Links Color:;string; &NavFrameBgColor=Top Frame Background color:;string; &TreeBgColor=Tree Frame Background:;string; &MainBgColor=Main Frame Background:;string;
+&PrimaryColor=MODxFlat Manager Color:;string;#FF6600;;Flat Skin Primary Color (mandatory) &NavFrameBgColor= Top Frame Background color:;string;;;(optional) &TreeBgColor= Tree Frame Background:;string;;;(optional) &TLinkColor=Tree Links Color:;string;;;Published resources and ElementsInTree element names (optional) &TreeElBgColor= Tree Elements tab Background:;string;;;ElementsInTree plugin background (optional) &MainBgColor= Main Frame Background:;string;;;(optional) &MainLinkColor=Main Links Color:;string;;;(optional)
 
 */
 

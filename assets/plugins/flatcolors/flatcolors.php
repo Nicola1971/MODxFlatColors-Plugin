@@ -100,9 +100,7 @@ color:'.$PrimaryColor.';
   color: #FFF;
   background: transparent;
 }
-.actionButtons a {
-color:#FFF!important;
-}
+
 .actionButtons a:hover 
 {
 background:'.$PrimaryColor.';
@@ -147,7 +145,7 @@ border-color: '.$PrimaryColor.'!important;
 background:'.$PrimaryColor.';
 color:#FFF!important;
 }
- .tab-page ul.actionButtons li a:hover {
+ .tab-page ul.actionButtons li a:hover, #treePane .tab-page .actionButtons a:hover, #treePane .tab-page .actionButtons a:hover i {
 background:'.$PrimaryColor.';
 border-color: '.$PrimaryColor.'!important;
 color: #FFF!important;
@@ -160,6 +158,7 @@ color: #FFF!important;
 background: '.$TreeElBgColor.'!important;
 background-color: '.$TreeElBgColor.'!important;
 }
+
 .treeframebody .tab-page ul.actionButtons li i,
 #mx_contextmenu .menuLink:hover i{
 color:#FFF!important;

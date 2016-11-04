@@ -71,11 +71,6 @@ background:'.$PrimaryColor.'!important;
 border:'.$PrimaryColor.'!important;
 border-bottom:0;
 }
-.dashboard .sectionHeader, .sectionHeader, .tab-pane ul li strong 
-{
-border:'.$PrimaryColor.' ;
-border-bottom:0;
-}
 .dynamic-tab-pane-control.tab-pane .tab-row .tab.selected,
 .dynamic-tab-pane-control.tab-pane .tab-row .tab.selected.hover{
 background: '.$PrimaryColor.';
@@ -99,6 +94,10 @@ color:'.$PrimaryColor.';
  {
   color: #FFF;
   background: transparent;
+}
+.actionButtons a 
+{
+color: #FFF!important;
 }
 
 .actionButtons a:hover 

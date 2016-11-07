@@ -51,9 +51,7 @@ a:link, a:visited {
 a.btn.btn-action, a.btn.panel-hide, #modxrecent_widget .btn, div#categories_list ul li strong a {
     color: #FFF!important;
 }
-span.disabledPlugin a {
-    color: #aaa!important;
-}
+
 
 h1:before, .tab-pane ul li ul li:before, form h1:before, .dashboard h1:before, .dashboard-block-content ul li a, .dashrow
 ul li span a, span.pagetitle-icon
@@ -81,6 +79,13 @@ border-top-color: '.$PrimaryColor.';
 .dynamic-tab-pane-control .tab-row .tab.selected.hover {
 color:'.$PrimaryColor.';
 border-top-color:'.$PrimaryColor.';
+}
+.tab-pane ul li ul li span a
+{
+color:#444!important;
+}
+.tab-pane ul li ul li span.disabledPlugin a {
+    color: #aaa!important;
 }
 .dynamic-tab-pane-control .tab-row .tab, 
 .dynamic-tab-pane-control .tab-row .tab span i,

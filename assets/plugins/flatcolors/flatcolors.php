@@ -5,6 +5,7 @@ config:
 &PrimaryColor=MODxFlat Manager Color:;string;#FF6600;;Flat Skin Primary Color (mandatory) &NavFrameBgColor= Top Frame Background color:;string;;;(optional) &TreeBgColor= Tree Frame Background:;string;;;(optional) &TLinkColor=Tree Links Color:;string;;;Published resources and ElementsInTree element names (optional) &TreeElBgColor= Tree Elements tab Background:;string;;;ElementsInTree plugin background (optional) &MainBgColor= Main Frame Background:;string;;;(optional) &MainLinkColor=Main Links Color:;string;;;(optional)
 
 **/
+if(!defined('MODX_BASE_PATH')){die('What are you doing? Get out of here!');}
 $output = "";
 $e = &$modx->Event;
 

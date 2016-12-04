@@ -1,11 +1,10 @@
 <?php
 /**
-events: OnManagerTopFrameHeaderHTMLBlock,OnManagerMainFrameHeaderHTMLBlock,OnManagerTreeRender
+events: OnManagerLoginFormPrerender,OnManagerTopPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTreePrerender,OnManagerTreeInit
 config:
 &PrimaryColor=MODxFlat Manager Color:;string;#FF6600;;Flat Skin Primary Color (mandatory) &NavFrameBgColor= Top Frame Background color:;string;;;(optional) &TreeBgColor= Tree Frame Background:;string;;;(optional) &TLinkColor=Tree Links Color:;string;;;Published resources and ElementsInTree element names (optional) &TreeElBgColor= Tree Elements tab Background:;string;;;ElementsInTree plugin background (optional) &MainBgColor= Main Frame Background:;string;;;(optional) &MainLinkColor=Main Links Color:;string;;;(optional)
 
 **/
-if(!defined('MODX_BASE_PATH')){die('What are you doing? Get out of here!');}
 $output = "";
 $e = &$modx->Event;
 
@@ -14,6 +13,19 @@ $PrimaryColor = isset($PrimaryColor) ? $PrimaryColor : '';
 $TreeLinksC = isset($TreeLinksC) ? $TreeLinksC : '';
 $TreeElBgColor = isset($TreeElBgColor) ? $TreeElBgColor : '';
 
+/*****************login*************/
+
+if($e->name == 'OnManagerLoginFormPrerender') {
+$logincssOutput = '<style>
+body, html {
+    background-color: '.$PrimaryColor.';
+    background-image: -webkit-linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
+    background-image: -moz-linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
+    background-image: -o-linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
+    background-image: -ms-linear-gradient(bottom, '.$PrimaryColor.'a 0%, #000 100%);
+    background-image: linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
+}</style>';
+}    
 /***************Top Frame (nav)  ******************/
 if($e->name == 'OnManagerTopPrerender') {
 //top frame - Nav bar
@@ -52,7 +64,9 @@ a:link, a:visited {
 a.btn.btn-action, a.btn.panel-hide, #modxrecent_widget .btn, div#categories_list ul li strong a {
     color: #FFF!important;
 }
-
+span.disabledPlugin a {
+    color: #aaa!important;
+}
 
 h1:before, .tab-pane ul li ul li:before, form h1:before, .dashboard h1:before, .dashboard-block-content ul li a, .dashrow
 ul li span a, span.pagetitle-icon
@@ -80,13 +94,6 @@ border-top-color: '.$PrimaryColor.';
 .dynamic-tab-pane-control .tab-row .tab.selected.hover {
 color:'.$PrimaryColor.';
 border-top-color:'.$PrimaryColor.';
-}
-.tab-pane ul li ul li span a
-{
-color:#444!important;
-}
-.tab-pane ul li ul li span.disabledPlugin a {
-    color: #aaa!important;
 }
 .dynamic-tab-pane-control .tab-row .tab, 
 .dynamic-tab-pane-control .tab-row .tab span i,
@@ -177,7 +184,7 @@ span.disabledPlugin > a > span.elementname {color: #b27979!important;}
 }
 $manager_theme = $modx->config['manager_theme'];
 if($manager_theme == "MODxFLAT") {
-$output .= $maincssOutput.$topcssOutput.$treecssOutput;
+$output .= $logincssOutput.$maincssOutput.$topcssOutput.$treecssOutput;
 }
 $e->output($output);
 return;

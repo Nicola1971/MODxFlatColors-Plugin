@@ -19,11 +19,6 @@ if($e->name == 'OnManagerLoginFormPrerender') {
 $logincssOutput = '<style>
 body, html {
     background-color: '.$PrimaryColor.';
-    background-image: -webkit-linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
-    background-image: -moz-linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
-    background-image: -o-linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
-    background-image: -ms-linear-gradient(bottom, '.$PrimaryColor.'a 0%, #000 100%);
-    background-image: linear-gradient(bottom, '.$PrimaryColor.' 0%, #000 100%);
 }</style>';
 }    
 /***************Top Frame (nav)  ******************/
@@ -178,6 +173,14 @@ color:#FFF!important;
 .rootNode, .publishedNode, 
 .treeframebody .elementname {color: '.$TreeLinksColor.'!important;}
 span.disabledPlugin > a > span.elementname {color: #b27979!important;}
+#treePane span.panel-title a:hover{color: '.$PrimaryColor.';}
+#treeSplitter {background: '.$PrimaryColor.';}
+.nu-context-menu ul li:hover {
+    background: '.$PrimaryColor.'!important;
+    border-color: '.$PrimaryColor.'!important;
+}
+.nu-context-menu ul li i, .nu-context-menu-title {color:'.$PrimaryColor.';}
+
 </style>
 ';
 

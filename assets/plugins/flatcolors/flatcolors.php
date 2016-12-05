@@ -138,7 +138,10 @@ $treecssOutput = '<style>
 body {
 	background:'.$TreeBgColor.'!important;
 }
-div.treeframebody, #treeHolder {	background: '.$TreeBgColor.'!important;}
+div.treeframebody, #treeHolder, .treeframebody .tab-row h2.tab {background: '.$TreeBgColor.'!important; }
+.treeframebody .tab-pane input.form-control {border: 1px solid '.$TreeBgColor.'; background: '.$TreeBgColor.'!important; }
+.treeframebody .tab-pane li > ul > li > span > a > small:after {
+display:none;}
 
 .treeButton i, .treeButtonDisabled i , #mx_contextmenu .menuLink i{  color: '.$PrimaryColor.'!important;
 }

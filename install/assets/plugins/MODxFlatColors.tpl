@@ -6,7 +6,7 @@
  *
  * @author    Nicola Lambathakis http://www.tattoocms.it/
  * @category    plugin
- * @version    Beta 1.0.1
+ * @version    RC 1.0
  * @license	 http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
  * @internal    @events OnManagerLoginFormPrerender,OnManagerTopPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTreePrerender,OnManagerTreeInit
  * @internal    @installset base
@@ -18,7 +18,7 @@
 ### MODxFlatColors Plugin for MODX Evolution 1.2 ###
 Customize MODxFlat Manager theme colors
 Written By Nicola Lambathakis http://www.tattoocms.it/
-Version Beta 1.0.1
+Version RC 1.0
 Events: OnManagerLoginFormPrerender,OnManagerTopPrerender,OnManagerMainFrameHeaderHTMLBlock,OnManagerTreePrerender,OnManagerTreeInit
 
 Default configuration:

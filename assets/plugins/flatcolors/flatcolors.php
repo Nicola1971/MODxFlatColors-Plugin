@@ -54,9 +54,11 @@ $maincssOutput = '
 body {
 	background:'.$MainBgColor.'!important;
 }
-a:link, a:visited {
-    color: '.$ALinksColor.'!important;
+.dashboard a, .dashboard a:visited {
+    color: '.$ALinksColor.';
 }
+
+
 a.btn.btn-action, a.btn.panel-hide, #modxrecent_widget .btn, div#categories_list ul li strong a {
     color: #FFF!important;
 }
@@ -74,6 +76,7 @@ background:'.$PrimaryColor.'!important;}
 .tab-pane ul li ul li strong {
 	background:transparent!important;
 }
+
 .dashboard .sectionHeader, .sectionHeader, .tab-pane ul li strong 
 {
 background:'.$PrimaryColor.'!important;
@@ -104,6 +107,7 @@ color:'.$PrimaryColor.';
   color: #FFF;
   background: transparent;
 }
+
 .actionButtons a 
 {
 color: #FFF!important;

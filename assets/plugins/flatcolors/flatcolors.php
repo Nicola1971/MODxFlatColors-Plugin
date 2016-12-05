@@ -147,7 +147,7 @@ color: '.$PrimaryColor.'!important;
 border-color: '.$PrimaryColor.'!important;
 }
 .treeframebody .tab-row h2.tab span, .treeframebody .tab-row h2.tab span i, .treeframebody .tab-pane input.form-control{
-    color: '.$PrimaryColor.'!important; }
+    color: '.$TreeLinksColor.'!important; }
 
 #mx_contextmenu #nameHolder, #mx_contextmenu a i, #mx_contextmenu .menuLink:hover {
 background:'.$PrimaryColor.';

@@ -57,8 +57,6 @@ body {
 .dashboard a, .dashboard a:visited {
     color: '.$ALinksColor.';
 }
-
-
 a.btn.btn-action, a.btn.panel-hide, #modxrecent_widget .btn, div#categories_list ul li strong a {
     color: #FFF!important;
 }
@@ -70,14 +68,14 @@ h1:before, .tab-pane ul li ul li:before, form h1:before, .dashboard h1:before, .
 ul li span a, span.pagetitle-icon
 {color: '.$PrimaryColor.'!important;}
 
-input[type="button"], input[type="submit"], .tab-pane ul li strong, #mx_contextmenu #nameHolder, .panel-hide, .tab-pane ul li strong {
+input[type="button"], input[type="submit"], #mx_contextmenu #nameHolder, .panel-hide {
 background:'.$PrimaryColor.'!important;}
 
 .tab-pane ul li ul li strong {
 	background:transparent!important;
 }
 
-.dashboard .sectionHeader, .sectionHeader, .tab-pane ul li strong 
+.dashboard .sectionHeader, .sectionHeader, .resourceTable .panel-title a
 {
 background:'.$PrimaryColor.'!important;
 border:'.$PrimaryColor.'!important;
@@ -96,18 +94,20 @@ border-top-color:'.$PrimaryColor.';
 }
 .dynamic-tab-pane-control .tab-row .tab, 
 .dynamic-tab-pane-control .tab-row .tab span i,
-.tab-pane ul li ul li strong,
-.dynamic-tab-pane-control .tab-row .tab.hover span
-{
-color:'.$PrimaryColor.';
-}
+.dynamic-tab-pane-control .tab-row .tab.hover span,
+#resourcesPane ul li span a,
+.switchForm h3,
+.switchForm label {color:'.$PrimaryColor.';}
+
 .dynamic-tab-pane-control .tab-row .tab.selected span i,
 .dynamic-tab-pane-control .tab-row .tab.selected.hover span i 
  {
   color: #FFF;
   background: transparent;
 }
-
+.resourceTable ul.elements > li:hover{
+    border-left: 3px solid '.$PrimaryColor.';
+}
 .actionButtons a 
 {
 color: #FFF!important;
